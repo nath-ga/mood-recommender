@@ -1,0 +1,4 @@
+title,description,moods_topk,moods_scores
+Notting Hill,Eine romantische Komödie über die Begegnung eines Buchhändlers mit einer berühmten Schauspielerin.,romantic; romantisch; heiter,1.000; 1.000; 0.999
+The Dark Knight,"Ein düsterer Actionfilm, in dem Batman gegen den Joker kämpft.",dark; düster; gritty,0.999; 0.999; 0.999
+Pride and Prejudice,"Eine klassische Geschichte über Liebe, Stolz und gesellschaftliche Erwartungen.",romantic; uplifting; thought-provoking,0.999; 0.999; 0.998

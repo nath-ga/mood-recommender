@@ -1,0 +1,14 @@
+# requirements.txt für Mood-Projekt
+
+# Hugging Face + PyTorch
+transformers>=4.40
+torch>=2.1
+
+# Datenverarbeitung
+pandas>=2.0
+tqdm>=4.66
+
+# Tokenizer & Dependencies
+sentencepiece>=0.1.99
+protobuf>=3.20
+tokenizers>=0.15
