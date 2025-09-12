@@ -25,11 +25,17 @@ huggingface/
 
 # Data: 
 data/*
-!data/sample.csv
+!data/sample.csv       # nur kleine Beispiel-CSV versionieren
 
 # Outputs: 
 outputs/*
-!outputs/sample_moods.csv
+!outputs/sample_moods.csv  # nur Beispielausgabe committen
 
 # Logs
 *.log
+
+# Cache für Mood-Probe
+cache/
+
+# Lokale Umgebungsvariablen / Secrets
+.env

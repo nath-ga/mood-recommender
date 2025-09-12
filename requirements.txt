@@ -7,8 +7,13 @@ torch>=2.1
 # Datenverarbeitung
 pandas>=2.0
 tqdm>=4.66
+langdetect
+numpy>=1.25
 
 # Tokenizer & Dependencies
 sentencepiece>=0.1.99
 protobuf>=3.20
 tokenizers>=0.15
+
+# Optional für Evaluation/Skalierung
+scikit-learn>=1.3
