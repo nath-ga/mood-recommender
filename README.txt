@@ -47,19 +47,36 @@ python mood_recommender.py --csv outputs/sample_moods.csv --user_text "Bin ersch
 
 🧪 Aktueller Stand
 Automatisches Labeling funktioniert (Zero-Shot Hugging Face).
-
 Erste Empfehlungen mit Cosine Similarity sind möglich.
-
 Serendipity-Mechanismus: Falls Liste zu einseitig ist, wird ein „hellerer“ Titel ergänzt.
 
 📌 Hinweise
 Alle Labels entstehen maschinell über Zero-Shot-Textklassifikation.
-
 Eingeschlossene Daten (sample.csv, sample_moods.csv) sind synthetische Beispiele.
-
 Eigene Tests mit größeren CSV-Dateien sind möglich, aber nicht Teil des Repos.
-
 Ziel ist ein Proof of Concept für das Portfolio, nicht ein perfektes Empfehlungssystem.
+
+🧭 So funktioniert es 
+Du wählst, wie du dich gerade fühlst – von „eher schlecht“ bis „richtig gut“ und ob du eher ruhig oder aktiv bist.  
+Die App sucht dann Titel, deren Stimmung dazu passt (oder – je nach Modus – dich eher **aufhellt**).  
+Dafür vergleicht sie Stimmungsprofile der Titel mit deiner aktuellen Stimmung.
+
+Eingaben
+- **Stimmungslage:** schlecht ↔ gut  
+- **Energielevel:** ruhig ↔ aktiv  
+- **Empfehlungsmodus:**  
+  - **passend** – Treffer, die deiner Stimmung ähneln  
+  - **aufhellen** – Vorschläge mit helleren, beruhigenden Moods  
+  - **Mischung** – ein Mix aus beidem  
+- **Optional:** Kurzer Freitext wie „Langer Tag, etwas Leichtes wäre gut.“
+
+Hinweise zu Daten
+- Du kannst eine eigene CSV laden (UTF-8, Spalten: `title`, `description`, `moods_topk`, `moods_scores`, optional `type`).  
+- Im Repo liegt eine kleine **Beispiel-CSV** nur zum Ausprobieren.
+
+Datenschutz
+- Deine Eingaben bleiben lokal in der App.  
+- Bei Nutzung des Freitext-Modus wird ein lokales Sprachmodell verwendet (kein Upload zu Dritten).
 
 📜 Lizenz
 Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
