@@ -1,5 +1,6 @@
 # README.txt
 # Mood Recommender (Proof of Concept)
+**Repo:** [mood-recommender](https://github.com/nath-ga/mood-recommender)  
 
 ## 🎯 Projektidee
 Viele Menschen wählen Filme oder Hörbücher nicht nur nach Genre, sondern nach Stimmung.  
@@ -77,6 +78,16 @@ Hinweise zu Daten
 Datenschutz
 - Deine Eingaben bleiben lokal in der App.  
 - Bei Nutzung des Freitext-Modus wird ein lokales Sprachmodell verwendet (kein Upload zu Dritten).
+
+### Präsentation
+
+![Slide 1](presentation/1.png)
+![Slide 2](presentation/2.png)
+![Slide 3](presentation/3.png)
+![Slide 4](presentation/4.png)
+![Slide 5](presentation/5.png)
+![Slide 6](presentation/6.png)
+![Slide 7](presentation/7.png)
 
 📜 Lizenz
 Dieses Projekt steht unter der [MIT-Lizenz](LICENSE).
